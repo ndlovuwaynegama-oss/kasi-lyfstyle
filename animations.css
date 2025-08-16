@@ -1,0 +1,259 @@
+/* Meat sizzle animation */
+@keyframes sizzle {
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.02) rotate(1deg); }
+    50% { transform: scale(0.98) rotate(-1deg); }
+    75% { transform: scale(1.01) rotate(0.5deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+.menu-item:hover {
+    animation: sizzle 0.5s infinite;
+}
+
+/* Gold pulse for CTAs */
+@keyframes gold-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 215, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+.cta-button {
+    animation: gold-pulse 2s infinite;
+}
+
+/* Floating animation for specials */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.special-card {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Hide all sections by default */
+section:not(.active) {
+  display: none;
+}
+
+/* Show active section */
+section.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Testimonial animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.testimonials-slide {
+  animation: fadeIn 1s ease;
+}
+
+/* Client images carousel */
+.images-slide {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.images-slide img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FFD700;
+  scroll-snap-align: start;
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.testimonials-slide {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  position: relative;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.kasi-title {
+  color: #333;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.kasi-title::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: #FFD700;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Add will-change for smoother animations */
+.menu-item:hover, .cta-button, .special-card {
+  will-change: transform, box-shadow;
+}
+
+/* Reduce animation intensity on mobile */
+@media (max-width: 768px) {
+  .menu-item:hover {
+    animation: sizzle 0.5s ease 1; /* Only play once on hover */
+  }
+}
+
+/* Meat sizzle animation */
+@keyframes sizzle {
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.02) rotate(1deg); }
+    50% { transform: scale(0.98) rotate(-1deg); }
+    75% { transform: scale(1.01) rotate(0.5deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+.menu-item:hover {
+    animation: sizzle 0.5s infinite;
+}
+
+/* Gold pulse for CTAs */
+@keyframes gold-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 215, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+.cta-button {
+    animation: gold-pulse 2s infinite;
+}
+
+/* Floating animation for specials */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.special-card {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Hide all sections by default */
+section:not(.active) {
+  display: none;
+}
+
+/* Show active section */
+section.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Testimonial animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.testimonials-slide {
+  animation: fadeIn 1s ease;
+}
+
+/* Client images carousel */
+.images-slide {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.images-slide img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FFD700;
+  scroll-snap-align: start;
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.testimonials-slide {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  position: relative;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.kasi-title {
+  color: #333;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.kasi-title::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: #FFD700;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Add will-change for smoother animations */
+.menu-item:hover, .cta-button, .special-card {
+  will-change: transform, box-shadow;
+}
+
+/* Reduce animation intensity on mobile */
+@media (max-width: 768px) {
+  .menu-item:hover {
+    animation: sizzle 0.5s ease 1; /* Only play once on hover */
+  }
+}
